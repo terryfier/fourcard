@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+    background-color: hsl(0, 0%, 96%);
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* HEADER */
+header {
+    padding: 6em 0;
+    text-align: center;
+}
+.heading__para1 {
+    font-size: 1.6em;
+    font-weight: 200;
+    color: hsl(234, 12%, 34%);
+}
+.heading__para2 {
+    font-size: 1.6em;
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+}
+.heading__para3 {
+    margin-top: 1em;
+    font-size: 1em;
+    font-weight: 400;
+    color: hsl(229, 6%, 66%);
+}
+
+/* CARD */
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 1.5em;
+    padding: 1.5em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card__flex {
+    max-width: 300px;
+    margin: auto;
+}
+.card__header {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+    margin-bottom: 0.4em;
+}
+.card__description {
+    font-size: 0.8em;
+    font-weight: 400;
+    color: hsl(229, 6%, 66%);
+    margin-bottom: 2.5em;
+}
+.card__image {
+    text-align: right;
+}
+.card--supervisor {
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+.card--team-builder {
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+.card-karma {
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+.card-calculator {
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+/* FOOTER */
+footer {
+    margin-top: 4em;
+}
+.attribution { 
+    font-size: 11px; text-align: center; 
+    color: hsl(228, 45%, 44%); 
+    padding-bottom: 2em;
+}
+
+@media(min-width:1440px){
+    .heading__para1, .heading__para2 {
+        font-size: 2.5em;
+    }
+    .heading__para3 {
+        display: inline-block;
+        max-width: 500px;
+    }
+    .card__flex {
+        display: flex;
+        max-width: 100%;
+        justify-content: center;
+    }
+    .card__flex-1 {
+        width: 25%;
+        align-self: center;
+    }
+    .card__flex-2 {
+        width: 25%;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+    }
+    .card__flex-3 {
+        width: 25%;
+        align-self: center;
+    }
+}
